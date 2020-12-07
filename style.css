@@ -91,6 +91,7 @@ html {
   position: relative;
   top: -80px;
   animation: blah 1s ease-in-out infinite;
+  will-change: blah;
 }
 .dot {
   background-color: white;
