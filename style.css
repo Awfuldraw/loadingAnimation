@@ -1,0 +1,127 @@
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html {
+  background-color: turquoise;
+}
+@keyframes blah {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+@keyframes strech-in-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes strech-in-out1 {
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1, 2);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes strech-in-out2 {
+  10% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1, 2);
+  }
+  60% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes strech-in-out3 {
+  20% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(1, 2);
+  }
+  70% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes strech-in-out4 {
+  30% {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(1, 2);
+  }
+  80% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes strech-in-out5 {
+  40% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 2);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
+}
+.three__dot {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -80px;
+  animation: blah 1s ease-in-out infinite;
+}
+.dot {
+  background-color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 0px 25px;
+}
+.five__bar {
+  display: flex;
+  position: relative;
+  top: 130px;
+}
+.bar {
+  background-color: white;
+  width: 23px;
+  height: 100px;
+  margin: 0px 5px;
+}
+.bar.one {
+  animation: strech-in-out1 1s ease-in-out infinite;
+}
+.bar.two {
+  animation: strech-in-out2 1s ease-in-out infinite;
+}
+.bar.three {
+  animation: strech-in-out3 1s ease-in-out infinite;
+}
+.bar.four {
+  animation: strech-in-out4 1s ease-in-out infinite;
+}
+.bar.five {
+  animation: strech-in-out5 1s ease-in-out infinite;
+}
